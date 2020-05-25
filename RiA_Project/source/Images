@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FDL version="1.5">
+  <TypeDefinition url="..\default_typedef.xml"/>
+  <Form id="Images" classname="Images" inheritanceid="" position="absolute 0 0 1024 768" titletext="New Form">
+    <Layouts>
+      <Layout>
+        <Button id="Button00" taborder="0" text="Button00" position2="absolute l:27 w:135 t:33 h:73" positiontype="position2" style="background:@gradation URL('theme://images\AQUA.GIF');" onclick="Button00_onclick"/>
+        <Button id="Button01" taborder="1" text="Button01" position2="absolute l:30 w:133 t:144 h:64" positiontype="position2" style="background:@gradation URL('BLUE');"/>
+        <Button id="Button02" taborder="2" text="Button02" position2="absolute l:34 w:134 t:238 h:69" positiontype="position2" style="background:@gradation URL('..\Images\GREEN.GIF');"/>
+      </Layout>
+    </Layouts>
+  </Form>
+</FDL>
