@@ -1,0 +1,50 @@
+
+function fn_Retrieve(obj:Button,  e:ClickEventInfo)
+{
+	ds_employees.url="DataURL::employees_select.jsp";
+	ds_employees.load();
+}
+
+
+function fn_Add(obj:Button,  e:ClickEventInfo)
+{
+	ds_employees.addRow();
+}
+
+function fn_Delete(obj:Button,  e:ClickEventInfo)
+{
+	ds_employees.deleteRow(ds_employees.rowposition);
+}
+
+
+function fn_Save(obj:Button,  e:ClickEventInfo)
+{
+
+	transaction("trSave"
+				,"DataURL::employees_save.jsp"
+				,"in_ds=ds_employees:u"
+				,""
+				,"sVal1=1"
+				,"fn_callback");
+	
+}
+var out_var;
+
+function fn_callback(trID, nCD, sMSG)
+{
+
+	if(trID=="trSave")
+	{
+		if(nCD<0)
+		{
+			alert("저장실패");
+		}
+		else
+		{
+			alert("저장성공");
+		}
+	}
+}
+
+
+
