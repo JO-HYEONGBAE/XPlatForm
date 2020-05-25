@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FDL version="1.5">
+  <TypeDefinition url="..\default_typedef.xml"/>
+  <Form id="Debugging" classname="Debugging" inheritanceid="" position="absolute 0 0 1024 768" titletext="New Form">
+    <Layouts>
+      <Layout>
+        <Button id="Button00" taborder="0" text="alert" position2="absolute l:56 w:186 t:35 h:76" positiontype="position2" onclick="Button00_onclick"/>
+        <Button id="Button01" taborder="1" text="trace" position2="absolute l:318 w:187 t:49 h:61" positiontype="position2" onclick="Button01_onclick"/>
+        <Button id="Button02" taborder="2" text="Debugging" position2="absolute l:57 w:198 t:150 h:73" positiontype="position2" onclick="Button02_onclick"/>
+      </Layout>
+    </Layouts>
+  </Form>
+</FDL>
