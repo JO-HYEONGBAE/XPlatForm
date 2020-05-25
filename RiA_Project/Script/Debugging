@@ -1,0 +1,25 @@
+
+function Button00_onclick(obj:Button,  e:ClickEventInfo)
+{
+	var sName="jayoon";
+	
+	alert(sName);
+}
+
+function Button01_onclick(obj:Button,  e:ClickEventInfo)
+{
+	var sName="조형배";
+	trace(sName);
+}
+
+function Button02_onclick(obj:Button,  e:ClickEventInfo)
+{
+	var i=0;
+	
+	i+=1;
+	i+=1;
+	i+=1;
+	i+=1;
+	i+=1;
+
+}
