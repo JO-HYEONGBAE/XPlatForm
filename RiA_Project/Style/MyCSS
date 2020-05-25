@@ -1,0 +1,34 @@
+Static
+{
+	
+	background	: darkgray ;
+	
+}
+
+Static:mouseover
+{
+	
+	color:red;
+}
+
+Div>Static
+{
+	background :#ecececff;
+}
+
+Static.val_chk
+{
+	color:red;
+}
+
+#st_title
+{
+	font: 굴림,20
+}
+
+MaskEdit[type="number"]
+{
+	align:right middle;
+}
+
+
