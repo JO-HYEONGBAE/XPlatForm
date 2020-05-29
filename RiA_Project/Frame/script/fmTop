@@ -1,0 +1,26 @@
+
+function Menu00_onmenuclick(obj:Menu, e:MenuClickEventInfo)
+{	
+	var sID 	=	e.id;
+	var sURL	=	gds_menu.lookup("menu_id", e.id, "menu_url");
+	var sTitle	=	gds_menu.lookup("menu_id", e.id, "menu_nm");
+	
+	if(sURL.length < 1)
+	{
+		return;
+	}
+	gfn_Open(sID, sURL, sTitle);
+}
+
+function gfn_Open(sID, sURL, sTitle)
+{
+	var oFS=application.mainframe.VFrameSet0.HFrameSet0.FrameSet0;
+	var	oCF=new ChildFrame(sID, 0, 0, 800, 600);
+
+	oCF.formurl=sURL;
+	oCF.titltext=sTitle;
+	
+	oFS.addChild(sID, oCF);
+	
+	oCF.show();
+}
