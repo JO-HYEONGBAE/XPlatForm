@@ -1,0 +1,13 @@
+
+function Grid00_oncelldblclick(obj:Grid, e:GridClickEventInfo)
+{
+	var sID 	=	gds_menu.getColumn(e.row, "menu_id");
+	var sURL	=	gds_menu.getColumn(e.row, "menu_url");
+	var sTitle	=	gds_menu.getColumn(e.row, "menu_nm");
+	
+	if(sURL.length < 1)
+	{
+		return;
+	}
+	gfn_Open(sID, sURL, sTitle);
+}
